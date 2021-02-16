@@ -1,5 +1,5 @@
-import React from 'react';
-import Board from './Board';
+import React from "react";
+import Board from "./Board";
 
 const winningCombinations = [
   [0, 1, 2],
@@ -26,9 +26,9 @@ class TicTacToe extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      boardDetails: ['', '', '', '', '', '', '', '', ''],
-      currentPlayer: { name: 'A', symbol: 'X' },
-      nextPlayer: { name: 'B', symbol: 'O' },
+      boardDetails: ["", "", "", "", "", "", "", "", ""],
+      currentPlayer: { name: "Ramam", symbol: "X" },
+      nextPlayer: { name: "Phani", symbol: "O" },
       isGameOver: false,
       movesCount: 0,
     };
@@ -37,7 +37,7 @@ class TicTacToe extends React.Component {
 
   handleClick(tileId) {
     const { boardDetails, currentPlayer } = this.state;
-    if (boardDetails[tileId] === '') {
+    if (boardDetails[tileId] === "") {
       const updatedDetails = boardDetails.slice();
       updatedDetails[tileId] = currentPlayer.symbol;
       const hasOver = hasWon(updatedDetails);
@@ -54,7 +54,7 @@ class TicTacToe extends React.Component {
   render() {
     if (this.state.isGameOver) {
       return (
-        <h1 style={{ textAlign: 'center' }}>
+        <h1 style={{ textAlign: "center" }}>
           <br />
           Congratulations {this.state.nextPlayer.name}
           <br />
@@ -65,7 +65,7 @@ class TicTacToe extends React.Component {
     }
     if (this.state.movesCount === 9) {
       return (
-        <h1 style={{ textAlign: 'center' }}>
+        <h1 style={{ textAlign: "center" }}>
           <br />
           <br />
           <br />
@@ -75,7 +75,7 @@ class TicTacToe extends React.Component {
     }
     return (
       <div>
-        <h3 style={{ textAlign: 'center' }}>
+        <h3 style={{ textAlign: "center" }}>
           Player {this.state.currentPlayer.name}'s turn
         </h3>
         <Board

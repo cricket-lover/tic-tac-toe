@@ -27,8 +27,8 @@ class TicTacToe extends React.Component {
     super(props);
     this.state = {
       boardDetails: ["", "", "", "", "", "", "", "", ""],
-      currentPlayer: { name: "Ramam", symbol: "X" },
-      nextPlayer: { name: "Phani", symbol: "O" },
+      currentPlayer: { name: "A", symbol: "X" },
+      nextPlayer: { name: "B", symbol: "O" },
       isGameOver: false,
       movesCount: 0,
     };

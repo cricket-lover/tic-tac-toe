@@ -2,6 +2,7 @@
   "name": "tic_tac_toe",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cricket-lover.github.io/tic-tac-toe",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
